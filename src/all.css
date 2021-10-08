@@ -1,0 +1,47 @@
+body {
+  background-image: url('../assets/background.svg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.main {
+  padding-top: 100px;
+}
+
+.wrapper{
+  max-width: 500px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 400%;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+.button-gr{
+  display: flex;
+  justify-content: space-around;
+}
+
+.select-gr {
+  display: flex;
+  flex-basis: 150px;
+}
+
+.select-title{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 20px;
+}
+
+.form-select{
+  margin-left: 5px;
+}
