@@ -13,22 +13,27 @@
       crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body onselectstart="return false;">
     <main class="container main">
       <div class="wrapper">
         <h1 class="title">
           GSearch
         </h1>
         <div class="button-gr">
-          <button type="button" class="btn btn-light">Clear</button>
+          <button type="button" class="btn btn-light" id="reset">reset</button>
           <div class="select-gr">
-            <p class="select-title">Display:</p>
-            <select class="form-select">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
+            <p class="select-title">First:</p>
+            <select class="form-select" id="select">
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
             </select>
           </div>
+        </div>
+
+        <input type="text" class="form-control mt-3" placeholder="Enter repo's name" id="input">
+
+        <div class="repo-list" id="list">
         </div>
       </div>
     </main>

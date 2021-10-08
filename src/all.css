@@ -1,47 +1,87 @@
 body {
-  background-image: url('../assets/background.svg');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  color: white;
+	background-image: url("../assets/background.svg");
+	background-size: cover;
+	background-position: center;
+	min-height: 120vh;
+	color: white;
 }
 
 .main {
-  padding-top: 100px;
+	padding-top: 100px;
 }
 
-.wrapper{
-  max-width: 500px;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.wrapper {
+	max-width: 800px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 .title {
-  color: white;
-  font-weight: bold;
-  font-size: 400%;
-  letter-spacing: 2px;
-  text-decoration: underline;
+	color: white;
+	font-weight: bold;
+	font-size: 400%;
+	letter-spacing: 2px;
+	text-decoration: underline;
 }
 
-.button-gr{
-  display: flex;
-  justify-content: space-around;
+.button-gr {
+	display: flex;
+	justify-content: space-between;
 }
 
 .select-gr {
-  display: flex;
-  flex-basis: 150px;
+	display: flex;
+	flex-basis: 150px;
 }
 
-.select-title{
-  margin-top: auto;
-  margin-bottom: auto;
-  font-size: 20px;
+.select-title {
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 20px;
 }
 
-.form-select{
-  margin-left: 5px;
+.form-select {
+	margin-left: 5px;
+}
+
+.repo-list {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.repo-item {
+	background-color: white;
+	border: 3px solid rgba(0, 0, 0, 0.2);
+	color: black;
+	border-radius: 5px;
+	transition: 0.2s;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding: 5px;
+	text-align: left;
+}
+
+.repo-item:hover {
+	border: 3px solid rgba(0, 0, 0, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.repo-title-wrapper {
+	display: flex;
+}
+
+.repo-title {
+	font-size: 20px;
+	font-weight: 700;
+	transition: 0.1s;
+	cursor: pointer;
+	text-decoration: none;
+	color: #0969da;
+}
+
+.repo-title:hover {
+	text-decoration: underline;
 }
