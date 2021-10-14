@@ -49,7 +49,7 @@ rxjs
 		repoList.html("");
 
 		items.forEach((element: any, index: number) => {
-			let html = `<div class="repo-item mb-4" style="opacity:0.2;filter: blur(10px);" id="${element.id}">
+			let html = `<div class="repo-item mb-4" id="${element.id}">
           <div class="repo-title-wrapper">
             <img src="${repoIcon}" style="margin-right: 10px;" class="mt-auto mb-auto" width="16"
               height="16" alt="gsearch star">
@@ -78,12 +78,8 @@ rxjs
           </div>
         </div>`;
 
-			repoList.append(html);
-
 			setTimeout(() => {
-				$("#" + element.id)
-					.css("opacity", 1)
-					.css("filter", "blur(0px)");
+				repoList.append(html);
 			}, 500 * index);
 		});
 	});
